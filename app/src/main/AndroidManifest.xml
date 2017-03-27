@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.genesis.genesisfuelstation">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gasstation"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:resizeableActivity="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ConfigipActivity"
+            android:label="@string/title_activity_configip"></activity>
+
+        <activity
+            android:name=".Activity.EmpresaActivity"
+            android:label="@string/title_activity_configempresa"></activity>
+        <activity
+            android:name=".Activity.IslaActivity"
+            android:label="@string/title_activity_configIsla"></activity>
+        <activity
+            android:name=".Activity.SurtidorActivity"
+            android:label="@string/title_activity_surtidor"
+            android:logo="@drawable/gas_station"></activity>
+        <activity
+            android:name=".Activity.ClienteSearchActivity"
+            android:label="@string/title_activity_cliente"></activity>
+
+    </application>
+
+</manifest>

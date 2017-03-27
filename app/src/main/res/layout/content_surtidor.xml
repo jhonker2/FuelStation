@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.genesis.genesisfuelstation.Activity.SurtidorActivity"
+    tools:showIn="@layout/app_bar_surtidor"
+    >
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:text="Tipo de Combustible"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="166dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/contenedor"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:text="Numero de Surtidores"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="597dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="73dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Valor en Dolares"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/txt_pago"
+        android:layout_alignBottom="@+id/txt_pago"
+        android:layout_alignLeft="@+id/GridProducto"
+        android:layout_alignStart="@+id/GridProducto" />
+
+    <Button
+        android:id="@+id/btn_despachar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/txt_pago"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="87dp"
+        android:drawableLeft="@drawable/gas_station"
+        android:drawablePadding="8dp"
+        android:text="Despachar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <GridView
+        android:id="@+id/GridProducto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="23dp"
+        android:columnWidth="120dp"
+        android:horizontalSpacing="@dimen/fab_size_normal"
+        android:verticalSpacing="10dp"
+        android:numColumns="3" />
+
+    <EditText
+        android:id="@+id/txt_pago"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="$0,00"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/text_productoS"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/txt_pago"
+        android:layout_alignBottom="@+id/txt_pago"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/text_productoS"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/GridProducto"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

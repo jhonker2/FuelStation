@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/GrbGrupo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView22"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/RbOpcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar por Cedula o RUC"
+            android:textSize="24sp"
+            android:theme="@style/MyCheckBox"/>
+        <RadioButton
+            android:id="@+id/RbOpcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar por Codigo"
+            android:textSize="24sp"
+            android:theme="@style/MyCheckBox"/>
+
+
+
+        <RadioButton
+            android:id="@+id/RbOpcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar por Placa"
+            android:textSize="24sp"
+            android:theme="@style/MyCheckBox"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView24"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView24"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="27dp"
+        android:text="Seleccione un Filtro."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/GrbGrupo1"
+        android:layout_alignLeft="@+id/GrbGrupo1"
+        android:layout_alignStart="@+id/GrbGrupo1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+</RelativeLayout>

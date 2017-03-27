@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/ckfiltro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:checked="false"
+        android:text="Codigo"
+        android:theme="@style/MyCheckBox" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CODIGO:"
+        android:textSize="12sp"
+        android:layout_below="@+id/txt_cedula"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="2dp"
+        android:text="CLIENTE:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="2dp"
+        android:text="DIRECION:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="2dp"
+        android:text="TELEFONO:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt_telefono"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignLeft="@+id/txt_direccion"
+        android:layout_alignStart="@+id/txt_direccion"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView9"
+        android:layout_alignLeft="@+id/txt_cliente"
+        android:layout_alignStart="@+id/txt_cliente"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView8"
+        android:layout_alignLeft="@+id/txt_codigo"
+        android:layout_alignStart="@+id/txt_codigo"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_codigo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text=""
+        android:layout_below="@+id/txt_cedula"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRODUCTO"
+        android:textSize="16sp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:text="CANT"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_toLeftOf="@+id/textView12"
+        android:layout_toStartOf="@+id/textView12"
+        android:text="PVP"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="TOTAL"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView12"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tproducto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tcantidad"
+        android:layout_alignBottom="@+id/tcantidad"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:text="TextView"
+        android:layout_toLeftOf="@+id/tcantidad"
+        android:layout_toStartOf="@+id/tcantidad" />
+
+    <TextView
+        android:id="@+id/tcantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tpvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tcantidad"
+        android:layout_alignBottom="@+id/tcantidad"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:text="TextView"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_alignTop="@+id/tpvp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tpvp"
+        android:layout_alignRight="@+id/tpvp"
+        android:layout_below="@+id/tpvp"
+        android:layout_marginTop="27dp"
+        android:text="SUBTOTAL:" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="15dp"
+        android:text="IVA:" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="13dp"
+        android:text="TOTAL A PAGAR:" />
+
+    <TextView
+        android:id="@+id/tsubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/total"
+        android:layout_alignStart="@+id/total"
+        android:layout_alignTop="@+id/textView17"
+        android:text="TextView"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/tiva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tsubtotal"
+        android:layout_alignRight="@+id/tsubtotal"
+        android:layout_alignTop="@+id/textView18"
+        android:text="TextView"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/ttotalp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignLeft="@+id/tiva"
+        android:layout_alignStart="@+id/tiva"
+        android:text="TextView"
+        android:textAlignment="textEnd" />
+
+    <Button
+        android:id="@+id/buttonVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="21dp"
+        android:drawableLeft="@drawable/gas_station"
+        android:text="Guardar"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="2dp"
+        android:text="CEDULA:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/t_cedu"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_codigo"
+        android:layout_alignLeft="@+id/txt_cliente"
+        android:layout_alignRight="@+id/txt_codigo"
+        android:layout_alignStart="@+id/txt_cliente"
+        android:layout_alignTop="@+id/textView13" />
+
+
+</RelativeLayout>

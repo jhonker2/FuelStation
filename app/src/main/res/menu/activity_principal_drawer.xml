@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_account_balance"
+            android:title="Islas" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+
+    </group>
+
+    <group  android:id="@+id/menu_botton"
+        android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Configuracion" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="Salir" />
+        </menu>
+    </group>
+
+</menu>

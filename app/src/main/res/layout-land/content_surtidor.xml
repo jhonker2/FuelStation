@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.genesis.genesisfuelstation.Activity.SurtidorActivity"
+    tools:showIn="@layout/app_bar_surtidor">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:text="Tipo de Combustible"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="166dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:text="Numero de Surtidores"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="597dp"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="64dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginTop="73dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="106dp"
+        android:ems="10"
+        android:hint="$0,00"
+        android:inputType="number"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Valor en Dolares"
+        android:textSize="20sp"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:id="@+id/email_sign_in_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/water_pump"
+        android:drawablePadding="8dp"
+        android:text="Despachar"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
+
+    <GridView
+        android:id="@+id/GridProducto"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:numColumns="3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="23dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:columnWidth="120dp"
+        android:horizontalSpacing="@dimen/fab_size_normal"/>
+
+
+</RelativeLayout>

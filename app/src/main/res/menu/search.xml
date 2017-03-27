@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyActivity" >
+    <item
+        android:id="@+id/menu3_buscar"
+        android:title="buscar Cliente"
+        android:icon="@drawable/account_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/Filtrar"
+        android:title="Filtrar"
+        android:icon="@drawable/filter_outline"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100"/>
+</menu>
